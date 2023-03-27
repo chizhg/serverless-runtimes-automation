@@ -59,7 +59,7 @@ jobs:
       uses: peter-evans/create-pull-request@v4
       with:
         token: ${{ secrets.PAT }}
-        commit-message: Update php-version matrix
+        commit-message: "ci: Update php-version matrix"
         title: "[Automation] Update php-version matrix"
         body: |
           - php-version matrix updates

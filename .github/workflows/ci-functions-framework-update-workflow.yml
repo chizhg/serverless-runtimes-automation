@@ -14,7 +14,8 @@ jobs:
         # https://github.com/GoogleCloudPlatform/functions-framework-php/pull/136
         # is submitted.
         # language: ['python', 'php', 'go', 'ruby'] 
-        language: ['python', 'go', 'ruby']
+        # language: ['python', 'go', 'ruby']
+        language: ['go']
     runs-on: ubuntu-latest
     permissions:
       id-token: write # Enable OIDC
@@ -80,4 +81,5 @@ jobs:
         push-to-fork: chizhg/functions-framework-${{ matrix.language }}
         branch: update-${{ matrix.language }}-version-matrix
         signoff: true
+        labels: "auto"
         delete-branch: true

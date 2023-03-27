@@ -60,7 +60,7 @@ jobs:
       with:
         token: ${{ secrets.PAT }}
         commit-message: Update php-version matrix
-        title: Update php-version matrix
+        title: "[Automation] Update php-version matrix"
         body: |
           - php-version matrix updates
 

@@ -60,7 +60,7 @@ jobs:
       with:
         token: ${{ secrets.PAT }}
         commit-message: Update python-version matrix
-        title: Update python-version matrix
+        title: "[Automation] Update python-version matrix"
         body: |
           - python-version matrix updates
 

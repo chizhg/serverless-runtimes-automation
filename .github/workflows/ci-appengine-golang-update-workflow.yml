@@ -60,7 +60,7 @@ jobs:
       with:
         token: ${{ secrets.PAT }}
         commit-message: Update go-version matrix
-        title: Update go-version matrix
+        title: "[Automation] Update go-version matrix"
         body: |
           - go-version matrix updates
 

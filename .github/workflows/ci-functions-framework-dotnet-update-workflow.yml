@@ -1,4 +1,4 @@
-name: ci-functions-framework-java-update-workflow
+name: ci-functions-framework-dotnet-update-workflow
 
 on:
   # schedule:

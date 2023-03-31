@@ -52,7 +52,7 @@ jobs:
         for version in "${versions[@]}"; do
           major=${version:${num}:1}
           minor=${version:$((num+1))}
-          versions_str+="'$major.$minor.x', "
+          versions_str+="'$major.$minor', "
         done
         # Remove the last comma and space
         versions_str=${versions_str%, *}

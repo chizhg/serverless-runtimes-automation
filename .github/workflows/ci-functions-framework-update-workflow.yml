@@ -52,6 +52,9 @@ jobs:
         for version in "${versions[@]}"; do
           major=${version:${num}:1}
           minor=${version:$((num+1))}
+          if [[ "$lan" == "go" ]] && [[ "$major.$minor" == "1.11" ]]; then
+            continue
+          fi
           versions_str+="'$major.$minor', "
         done
         # Remove the last comma and space

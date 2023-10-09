@@ -56,6 +56,10 @@ jobs:
             continue
           fi
           versions_str+="'$major.$minor', "
+          # https://github.com/GoogleCloudPlatform/functions-framework-ruby/pull/154#pullrequestreview-1373215438
+          if [[ "$lan" == "ruby" ]] && [[ "$major.$minor" == "3.0" ]]; then
+            versions_str+="'3.1', "
+          fi
         done
         # Remove the last comma and space
         versions_str=${versions_str%, *}

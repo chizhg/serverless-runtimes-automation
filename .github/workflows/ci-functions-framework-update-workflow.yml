@@ -1,9 +1,9 @@
 name: ci-functions-framework-update-workflow
 
 on:
-  schedule:
+  #schedule:
   # Run every day at 10AM.
-  - cron: '0 10 * * *'
+  #- cron: '0 10 * * *'
   workflow_dispatch:
 
 jobs:
